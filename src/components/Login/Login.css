@@ -1,0 +1,36 @@
+.titles {
+    margin: 0vh;
+    color: white;
+    padding-top: 30px;
+}
+
+.icon-github {
+    width: 80px;
+    height: 80px;
+    filter: invert(100%) url(#color-filter);
+    padding-left: 20px;
+}
+
+.intro {
+    margin-top: 150px ;
+    color: white;
+    font-size: 4vh;
+}
+
+.button-github {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.icon {
+    padding-bottom: 5px;
+    padding-left: 7px;
+}
+
+.background {
+    height: 100vh ;
+    background-color: #333333;
+    background-size: cover;
+}

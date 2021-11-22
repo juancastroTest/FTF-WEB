@@ -1,0 +1,71 @@
+.user-data {
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+    background-color: #333333;
+
+}
+
+.conteiner-data-user {
+    display: flex;
+}
+
+
+.title-data-user {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+.avatar {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.div-logout {
+    margin-right: 7%;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.conteiner-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p-data {
+    font-size: 14px;
+    color: gray;
+}
+
+@media ( max-width: 1100px ) {
+    
+    .title-data-user {
+        margin-top: 30px;
+        font-size: 20px;
+        color: white;
+    
+    }
+    
+    .data-repository {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media ( min-width: 1100px ) {
+
+    .data-repository {
+        margin-top: 50px;
+        margin-right:  100px;
+        margin-left: 100px;
+        width: 600px;
+    
+    }
+
+}  

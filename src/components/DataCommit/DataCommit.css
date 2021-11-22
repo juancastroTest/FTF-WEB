@@ -1,0 +1,66 @@
+.commit-data {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    background-size: 100%;
+}
+
+.div-button-logout {
+    margin-right: 30px;
+    margin-left: auto;
+    margin-top: -30px;
+}
+
+.contenedor-code-button {
+  flex-wrap: wrap;
+}
+
+.title {
+    margin-top: 30px;
+    color: white;
+
+}
+
+.data-text {
+    font-size: 12px;
+}
+
+.contenedor-cards-commits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-branchs {
+    margin-top: 50px;
+    color: white;
+}
+
+
+@media ( max-width: 1000px ) {
+    
+    .title {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .body-card {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}
+
+
+@media ( min-width: 1100px ) {
+
+    .body-card {
+        margin-top: 50px;
+        margin-right: 100px; 
+        margin-left: 100px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+}  

@@ -1,0 +1,24 @@
+.titles-data {
+    margin: 0vh;
+    color: white;
+    padding-top: 30px;
+}
+
+.loading {
+    margin-top: 30vh;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+
+.loading-p {
+    color: white;
+    margin-top: 50px;
+    font-size: 6vh;
+}
+
+.background {
+    height: 100vh ;
+    background-color: #333333;
+    background-size: cover;
+}

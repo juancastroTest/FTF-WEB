@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Login from './components/Login/Login'
+import Loading from './components/Loading/Loading'
+import UserData from './components/UserData/UserData'
+import DataRepoCommit from './components/DataCommit/DataCommit'
+import DataLanguage from './components/DataLanguage/DataLanguage'
+import { DataProvider } from './Context/Context'
 import './App.css';
+
 
 function App() {
   return (
+    <DataProvider>
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <Route
+     exact path='/'
+     component={Login}
+    /> 
+    
+    <Route 
+     path='/user/login/callback'
+     component={Loading}
+    />
+    
+    <Route 
+     path='/data'
+     component={UserData}
+    />
+
+    <Route 
+     path='/commit'
+     component={DataRepoCommit}
+    />
+
+    <Route 
+     path='/repo'
+     component={DataLanguage}
+    />
+
     </div>
+    </BrowserRouter>
+    </DataProvider>
   );
 }
 

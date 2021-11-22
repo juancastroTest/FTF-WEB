@@ -89,7 +89,7 @@ const UserData = ({history}) => {
            <div className='conteiner-data' >
            {
                repoNames.length >= 1 && repoNames.map((e, index) => {
-                   console.log(e)
+
                 return (
                 
                     <div className="row" key={index} >

@@ -65,13 +65,14 @@ const DataRepoCommit = ({history}) => {
             <div className='contenedor-cards-commits' >
                 {
                     datosRepo.length >= 1 && datosRepo.map((e, index) => {
+  
                      return (
                       <div className="card body-card" key={index} >
                         <div className="card-body">
                             <h5 className="card-title ">Author: {e.commit.author.name}</h5>
                             <h6 className="card-title data-text"><strong>Date:</strong> {e.commit.committer.date.slice(0,10) } </h6>
                             <p className="card-text data-text"><strong>Message:</strong> {e.commit.message}.</p>
-                            <a className="btn btn-primary" href={e.parents === 0  ? console.log('No contiene url') : e.parents[0]?.html_url } target="_blank" rel="noreferrer"> <h6> 
+                            <a className="btn btn-primary" href={e.html_url.length > 0 ? e.html_url :  console.log('No contiene url')} target="_blank" rel="noreferrer"> <h6> 
                             see commit on github  </h6> </a>
                         </div>
                       </div>    
